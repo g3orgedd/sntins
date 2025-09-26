@@ -10,15 +10,15 @@
 </head>
 <body>
   <div class="container">
-    <h2 class="mb-4">Экспорт SNTIN-кодов в Excel</h2>
+    <h2 class="mb-4">Выгрузка из JSON в Excel</h2>
     <div class="file-upload">
-      <label class="form-label">Выберите JSON-файл с агрегированными серийными номерами:</label>
-      <input type="file" id="jsonFile" accept=".json" class="form-control" style="max-width:350px;">
+      <label class="form-label">Выберите JSON-файл:</label>
+      <input type="file" id="jsonFile" accept=".json" class="form-control">
       <button id="processBtn" class="btn btn-success mt-2">Обработать файл</button>
     </div>
     <div id="status" class="status-message"></div>
     <div id="tableContainer" style="display:none;">
-      <h5>Предпросмотр данных:</h5>
+      <h5>Поиск кода:</h5>
       <input type="text" id="searchInput" class="form-control mb-2" placeholder="Поиск по Unit Serial Number или SNTIN...">
       <div id="tablePreview"></div>
       <button id="downloadBtn" class="btn btn-primary mt-3" disabled>Скачать Excel</button>

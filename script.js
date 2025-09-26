@@ -29,10 +29,10 @@ document.getElementById('processBtn').onclick = function() {
         }
       });
       if (excelData.length === 0) {
-        showStatus("Серийные номера или SNTIN-коды не найдены.", "error");
+        showStatus("Unit Serial Number или SNTIN-коды не найдены.", "error");
         document.getElementById("tableContainer").style.display = "none";
       } else {
-        showStatus(`Обработано пар: ${excelData.length}`, "success");
+        showStatus(`Обработано строк: ${excelData.length}`, "success");
         displayUnitNumbersInTable(excelData);
         document.getElementById("tableContainer").style.display = "block";
         document.getElementById("downloadBtn").disabled = false;

@@ -15,8 +15,7 @@ body {
     max-height: 280px;
     overflow-y: auto;
     margin-top: 20px;
-    border: 1px solid #dee2e6;
-    border-radius: 6px;
+    border-bottom: 1px solid #dee2e6;
     background: #fff;
 }
 .table-hover tbody tr:hover {
@@ -24,4 +23,7 @@ body {
 }
 .mb-4 {
     margin-bottom: 0px !important;
+}
+#downloadBtn {
+    margin-top: 10px !important;
 }
